@@ -13,8 +13,7 @@ RUN add-apt-repository ppa:ubuntu-toolchain-r/test -y && \
                         make \
                         wget
 
-RUN cd ~ && \
-    mkdir ucpp && \
-    cd ucpp && \
-    wget http://plg.uwaterloo.ca/~usystem/pub/uSystem/u++-7.0.0.sh && \
+WORKDIR /root/ucpp
+
+RUN wget http://plg.uwaterloo.ca/~usystem/pub/uSystem/u++-7.0.0.sh && \
     sh u++-7.0.0.sh
