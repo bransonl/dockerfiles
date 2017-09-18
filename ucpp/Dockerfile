@@ -17,3 +17,5 @@ WORKDIR /root/ucpp
 
 RUN wget http://plg.uwaterloo.ca/~usystem/pub/uSystem/u++-7.0.0.sh && \
     sh u++-7.0.0.sh
+
+WORKDIR /root
