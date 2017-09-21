@@ -11,7 +11,8 @@ RUN add-apt-repository ppa:ubuntu-toolchain-r/test -y && \
                         gcc-6 \
                         g++-6 \
                         make \
-                        wget
+                        wget \
+                        vim
 
 WORKDIR /root/ucpp
 
