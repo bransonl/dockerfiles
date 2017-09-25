@@ -11,6 +11,7 @@ RUN add-apt-repository ppa:ubuntu-toolchain-r/test -y && \
                         gcc-6 \
                         g++-6 \
                         make \
+                        time \
                         wget \
                         vim
 
